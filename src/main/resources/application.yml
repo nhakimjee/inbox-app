@@ -6,3 +6,25 @@ spring:
           github:
             client-id: Iv1.7207826d909c74c1
             client-secret: <client_secret>
+  data:
+    cassandra:
+      keyspace-name: main
+      username: <username>
+      password: <password>
+      schema-action: recreate-drop-unused
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+  astra:
+    db:
+      id: d116216d-a52a-43af-aed9-5bfe3c6cef00-1
+      region: us-east4
+      keyspace: main
+      application:
+        token: <astra-app-token>
+
+  datastax.astra:
+    secure-connect-bundle: secure-connect-inbox-app.zip

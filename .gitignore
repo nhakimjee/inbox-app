@@ -32,3 +32,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Astra secure connect bundle ###
+secure-connect-inbox-app.zip
